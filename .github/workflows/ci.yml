@@ -22,10 +22,21 @@ jobs:
         uses: oscarnevarezleal/asccinema-action/actions/asccicast@dev
         with:
           args: generate -s README.template.md -o README.md
-      - name: Giffy
+      - name: Theme block 0
         uses: oscarnevarezleal/asccinema-action/actions/asciicast2gif@dev
         with:
-          files: "block-*.json"
+          theme: tango
+          files: "block-0.*"
+      - name: Theme block 1
+        uses: oscarnevarezleal/asccinema-action/actions/asciicast2gif@dev
+        with:
+          theme: solarized-dark
+          files: "block-1.*"
+      - name: Theme block 2
+        uses: oscarnevarezleal/asccinema-action/actions/asciicast2gif@dev
+        with:
+          theme: monokai
+          files: "block-2.*"
       - uses: stefanzweifel/git-auto-commit-action@v4
         with:
           # Optional, but recommended
