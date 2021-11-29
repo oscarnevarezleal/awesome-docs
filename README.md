@@ -8,6 +8,6 @@
 
 ## Usage
 
-![](.asccicast/block-2.gif)
+![](%codeblock-img-2%)
 
 ## Credits
