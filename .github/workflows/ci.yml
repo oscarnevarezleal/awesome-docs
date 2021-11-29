@@ -20,21 +20,21 @@ jobs:
           sudo pip3 install asciinema
       - name: Asccinema generation
         id: asccinema
-        uses: oscarnevarezleal/asccinema/actions/asccicast@dev
+        uses: oscarnevarezleal/asccinema-action/actions/asccicast@dev
         with:
           args: generate -s README.template.md -o README.md
       - name: Giffy
-        uses: oscarnevarezleal/asccinema/actions/asciicast2gif@dev
+        uses: oscarnevarezleal/asccinema-action/actions/asciicast2gif@dev
         with:
           files: "block-*.json"
       - uses: actions/upload-artifact@v2
         with:
           name: artifacts
-          path: "*.gif"
+          path: ".asccinema/*.gif"
       - uses: actions/upload-artifact@v2
         with:
           name: block
-          path: "*.md"
+          path: ".asccinema/*.md"
       - uses: stefanzweifel/git-auto-commit-action@v4
         with:
           # Optional, but recommended
@@ -50,4 +50,4 @@ jobs:
           # See the `pathspec`-documentation for git
           # - https://git-scm.com/docs/git-add#Documentation/git-add.txt-ltpathspecgt82308203
           # - https://git-scm.com/docs/gitglossary#Documentation/gitglossary.txt-aiddefpathspecapathspec
-          file_pattern: "*.gif *.md"
+          file_pattern: ".asccinema/*.* *.md"

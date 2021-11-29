@@ -8,13 +8,12 @@
 # This is a no-ops demo project 🙌
 ```
 
-
 ## Installation
 
 ```shell
+# 🚀 Here we go!
 npm i -g @org/awesome-project
 # 
-# 🚀 Here we go!
 ```
 
 ## Usage
