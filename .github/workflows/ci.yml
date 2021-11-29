@@ -4,7 +4,6 @@ on:
   push:
     branches: [ 'dev' ]
 
-# A workflow run is made up of one or more jobs that can run sequentially or in parallel
 jobs:
   # This workflow contains a single job called "build"
   build:
@@ -27,14 +26,6 @@ jobs:
         uses: oscarnevarezleal/asccinema-action/actions/asciicast2gif@dev
         with:
           files: "block-*.json"
-      - uses: actions/upload-artifact@v2
-        with:
-          name: artifacts
-          path: ".asccinema/*.gif"
-      - uses: actions/upload-artifact@v2
-        with:
-          name: block
-          path: ".asccinema/*.md"
       - uses: stefanzweifel/git-auto-commit-action@v4
         with:
           # Optional, but recommended
@@ -50,4 +41,4 @@ jobs:
           # See the `pathspec`-documentation for git
           # - https://git-scm.com/docs/git-add#Documentation/git-add.txt-ltpathspecgt82308203
           # - https://git-scm.com/docs/gitglossary#Documentation/gitglossary.txt-aiddefpathspecapathspec
-          file_pattern: ".asccinema/*.* *.md"
+          file_pattern: ".asccicast/*.gif *.md"
