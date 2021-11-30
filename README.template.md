@@ -1,7 +1,7 @@
 # Awesome Project
 
 ```shell
-#👋 Hi there!
+#Hi there! 👋
 #
 #Thanks for passing by 🙇
 #

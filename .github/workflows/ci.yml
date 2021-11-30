@@ -33,11 +33,13 @@ jobs:
         uses: oscarnevarezleal/asccinema-action/actions/asciicast2gif@dev
         with:
           theme: solarized-dark
+          rows: 3
           files: "block-1.*"
       - name: Theme block 2
         uses: oscarnevarezleal/asccinema-action/actions/asciicast2gif@dev
         with:
           theme: monokai
+          rows: 3
           files: "block-2.*"
       - uses: stefanzweifel/git-auto-commit-action@v4
         with:
