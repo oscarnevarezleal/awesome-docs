@@ -1,6 +1,10 @@
 # Awesome Project
 
+<center>
+
 ![](.asccicast/block-0.gif)
+
+</center>
 
 ## Installation
 
