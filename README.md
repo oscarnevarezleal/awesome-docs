@@ -2,16 +2,16 @@
 
 <center>
 
-![](.asccicast/block-0.gif)
+![](.asciicast/block-0.gif)
 
 </center>
 
 ## Installation
 
-![](.asccicast/block-1.gif)
+![](.asciicast/block-1.gif)
 
 ## Usage
 
-![](%codeblock-img-2%)
+![](.asciicast/block-2.gif)
 
 ## Credits
