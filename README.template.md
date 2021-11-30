@@ -1,5 +1,6 @@
 # Awesome Project
 
+<center>
 ```shell
 #Hi there! 👋
 #
@@ -7,6 +8,7 @@
 #
 #This is a no-ops demo project 🙌
 ```
+</center>
 
 ## Installation
 
