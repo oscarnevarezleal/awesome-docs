@@ -19,25 +19,25 @@ jobs:
           sudo pip3 install asciinema
       - name: Asccinema generation
         id: asccinema
-        uses: oscarnevarezleal/asccinema-action/actions/asccicast@dev
+        uses: oscarnevarezleal/asciinema-actions/actions/asccicast@dev
         with:
           args: generate -s README.template.md -o README.md
       - name: Theme block 0
-        uses: oscarnevarezleal/asccinema-action/actions/asciicast2gif@dev
+        uses: oscarnevarezleal/asciinema-actions/actions/asciicast2gif@dev
         with:
           theme: tango
           rows: 5
           scale: 1
           files: "block-0.*"
       - name: Theme block 1
-        uses: oscarnevarezleal/asccinema-action/actions/asciicast2gif@dev
+        uses: oscarnevarezleal/asciinema-actions/actions/asciicast2gif@dev
         with:
           theme: solarized-dark
           rows: 3
           scale: 1
           files: "block-1.*"
       - name: Theme block 2
-        uses: oscarnevarezleal/asccinema-action/actions/asciicast2gif@dev
+        uses: oscarnevarezleal/asciinema-actions/actions/asciicast2gif@dev
         with:
           theme: monokai
           rows: 3
