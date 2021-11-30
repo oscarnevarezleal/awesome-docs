@@ -26,8 +26,7 @@ jobs:
         uses: oscarnevarezleal/asccinema-action/actions/asciicast2gif@dev
         with:
           theme: tango
-          columns: 80
-          rows: 14
+          rows: 5
           scale: 1
           files: "block-0.*"
       - name: Theme block 1
