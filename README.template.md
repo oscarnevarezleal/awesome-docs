@@ -2,7 +2,7 @@
 
 <center>
 ```shell
-# \u001b[48;5;251m\u001b[38;5;8m\u001b[48;5;251m oscar \u001b[48;5;150m\u001b[38;5;251m\u001b[38;5;235m\u001b[48;5;150m main \u001b[48;5;7m\u001b[38;5;150m\u001b[38;5;8m\u001b[48;5;7m $ \u001b[0m\u001b[38;5;7m\u001b[0m Hi there! 👋
+#Hi there! 👋
 #
 #Thanks for passing by 🙇
 #

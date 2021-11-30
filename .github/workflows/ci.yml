@@ -19,6 +19,7 @@ jobs:
         uses: oscarnevarezleal/asciinema-actions/actions/asccicast@dev
         with:
           args: generate -s README.template.md -o README.md
+          config: .asciinema.json
       - name: Theme block 0
         uses: oscarnevarezleal/asciinema-actions/actions/asciicast2gif@dev
         with:
